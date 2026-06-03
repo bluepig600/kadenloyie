@@ -16,9 +16,28 @@
   max-width: 500px;
   padding: 20px;
   background-color: orange;
-}</style>
+}
+.text-style {
+    font-size: 24px;
+    color: #056bfd;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+/* CSS Blink Animation */
+.blink {
+    animation: blink-animation 1s steps(1, start) infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        visibility: hidden;
+    }
+}
+  </style>
   </head>
   <body style="background-color:yellow;"><div class="container">
   <div class="centered-box"><h1>Bitcoin</h1><br>
-  <p>buy my bitcoin</p></div></div></body>
+  <p class="text-style blink">buy my bitcoin</p></div></div></body>
 </html>
